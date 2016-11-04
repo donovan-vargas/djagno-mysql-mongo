@@ -1,2 +1,2 @@
 # djagno-mysql-mongo
-Proyecto de integración django con múltiples bases de datos MySQL y Mong
+Proyecto de integración django con múltiples bases de datos MySQL y Mongo
