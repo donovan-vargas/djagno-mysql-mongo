@@ -3,7 +3,7 @@ from .models import grades
 
 def get_grades(request):
     my_grades = grades.objects()
-    variable = 80
+    variable = 888
     context = {
         'my_grades': my_grades
     }
