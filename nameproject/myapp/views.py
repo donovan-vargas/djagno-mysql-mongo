@@ -38,6 +38,7 @@ def get_grades(request):
         return render(request, 'myapp/get_grades.html')
 =======
     my_grades = grades.objects()
+    variable = 888
     context = {
         'my_grades': my_grades
     }
