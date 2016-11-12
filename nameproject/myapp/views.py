@@ -6,6 +6,7 @@ from graphos.sources.model import SimpleDataSource
 
 
 def get_grades(request):
+<<<<<<< HEAD
     """ Obtenemos el get de nuestro formulario,
         Si no hay datos alimentamos vacio para evitar errores
     """
@@ -35,3 +36,10 @@ def get_grades(request):
         return render(request, 'myapp/get_grades.html', context)
     else:
         return render(request, 'myapp/get_grades.html')
+=======
+    my_grades = grades.objects()
+    context = {
+        'my_grades': my_grades
+    }
+    return render(request, 'myapp/get_grades.html', context)
+>>>>>>> parent of 2a4e010... primera prueba se agrega variable
