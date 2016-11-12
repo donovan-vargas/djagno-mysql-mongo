@@ -3,5 +3,5 @@ from django.conf.urls import url
 from .import views
 
 urlpatterns = [
-    url(r'^get_grades', views.get_grades, name='get_grades')
+    url(r'^get_grades/$', views.get_grades, name='myapp.get_grades')
 ]

@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% block content %}
-    <p>{{ my_grades.count }}</p> <!--Esto cuenta el numero de documentos regresados por la consulta-->
-    {% for gradev in my_grades %}
-        <p>estudent {{ gradev.student_id  }}
-            type {{ gradev.type }}
-            score {{ gradev.score }}</p>
-    {% endfor %}
-{% endblock %}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content  %}
+    <form action="." method="GET" role="form">
+        <input type="text" name="student_id" value="{{ query|escape }}"  class="form-control input-lg" placeholder="Buscar id estudiante" />
+        <button  class="btn btn-info btn-lg" type="submit" value="">Buscar</button>
+    </form>
+    {% if student_id %}
+        <h3> Id del estudiamte es: {{ student_id }}</h3>
+        <div>{{ donut_chart.as_html }}</div>
+    {% endif %}
+{% endblock content %}

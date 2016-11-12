@@ -6,8 +6,7 @@ class grades(Document):
     type = fields.StringField()
     score = fields.DecimalField()
 
-
     def __repr__(self):
-        return 'Studen id: ' + str(self.studen_id)
+        return 'Studen id: ' + str(self.student_id)
 
 
