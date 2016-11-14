@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_vgcode',
-        'USER': 'donovan',
-        'PASSWORD': 'zen.py32',
+        'USER': 'user',
+        'PASSWORD': 'pass',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     },
